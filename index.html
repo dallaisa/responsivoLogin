@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    </style>
+</head>
+<body>
+    <section>
+        <div class="imgBx">
+            <img src="imagem1.gif" alt="imagem gif">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <!-- Título Dinâmico -->
+                <h2 id="formTitle">Logar</h2>
+                
+                <!-- Formulário de Login -->
+                <form id="loginForm">
+                    <div class="inputBx">
+                        <span>Usuário</span>
+                        <input type="text" name="username">
+                    </div>
+                    <div class="inputBx">
+                        <span>Senha</span>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox" name="remember"> Lembrar de mim</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Logar">
+                    </div>
+                    <div class="inputBx">
+                        <p>Não tem uma conta? <a href="#" onclick="showRegisterForm()">Inscreva-se</a></p>
+                    </div>
+                </form>
+
+                <!-- Formulário de Cadastro -->
+                <form id="registerForm" style="display:none;">
+                    <div class="inputBx">
+                        <span>Crie um nome de usuário</span>
+                        <input type="text" name="newUsername">
+                    </div>
+                    <div class="inputBx">
+                        <span>Crie uma senha</span>
+                        <input type="password" name="newPassword">
+                    </div>
+                    <div class="inputBx">
+                        <span>Confirme a senha</span>
+                        <input type="password" name="confirmPassword">
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Inscreva-se">
+                    </div>
+                    <div class="inputBx">
+                        <p>Já tem uma conta? <a href="#" onclick="showLoginForm()">Logar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>
